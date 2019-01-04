@@ -9,6 +9,8 @@
 
 // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
 // nor polyfill, then a plain number is used for performance.
+
+// Symbol.for 全局注册 保证标记的类型唯一 （利用Symbol标记类型）
 const hasSymbol = typeof Symbol === 'function' && Symbol.for;
 
 export const REACT_ELEMENT_TYPE = hasSymbol
