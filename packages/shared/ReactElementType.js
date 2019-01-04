@@ -7,6 +7,7 @@
  * @flow
  */
 
+// ts 接口
 export type Source = {
   fileName: string,
   lineNumber: number,
